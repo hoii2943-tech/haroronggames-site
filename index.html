@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>하로롱게임즈 | Harorong Games</title>
+<meta name="description" content="하로롱게임즈(Harorong Games)는 가볍고 즐거운 모바일 게임을 만드는 1인 게임 스튜디오입니다.">
+<meta property="og:title" content="하로롱게임즈 | Harorong Games">
+<meta property="og:description" content="가볍게 떠오르는 즐거움 — Light games that lift your day.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='28' r='20' fill='%23ff8a65'/%3E%3Cpath d='M32 48 L28 58 L36 58 Z' fill='%23ff8a65'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f6fbff; --bg2:#e8f3ff; --ink:#1d2433; --muted:#5b667a;
+    --accent:#ff8a65; --accent2:#7cc4ff; --card:#ffffff; --line:#dbe6f3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#121826; --bg2:#1a2336; --ink:#eef2f8; --muted:#a8b3c7;
+      --accent:#ff9e80; --accent2:#7cc4ff; --card:#1c2538; --line:#2a3550; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+    color:var(--ink); background:linear-gradient(180deg,var(--bg2),var(--bg) 60%);
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;text-decoration:none;white-space:nowrap}
+  .logo svg{width:34px;height:34px}
+  nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+  nav a:hover{color:var(--ink)}
+
+  .hero{position:relative;padding:72px 20px 88px;overflow:hidden}
+  .hero h1{font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.2;margin:0 0 14px;letter-spacing:-.02em}
+  .hero h1 span{color:var(--accent)}
+  .hero p{font-size:1.1rem;color:var(--muted);max-width:540px;margin:0}
+  .hero .en{font-size:.98rem;margin-top:6px}
+  .balloons{position:absolute;right:-10px;top:30px;width:min(40%,320px);height:280px;pointer-events:none}
+  .b{position:absolute;border-radius:50% 50% 48% 48%;animation:float 6s ease-in-out infinite}
+  .b::after{content:"";position:absolute;left:50%;bottom:-38px;width:1px;height:38px;background:var(--muted);opacity:.35}
+  .b1{width:90px;height:104px;background:var(--accent);left:30%;top:20px}
+  .b2{width:62px;height:72px;background:var(--accent2);left:65%;top:90px;animation-delay:-2s}
+  .b3{width:46px;height:54px;background:#ffd166;left:10%;top:130px;animation-delay:-4s}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+  @media (prefers-reduced-motion: reduce){.b{animation:none}}
+  @media (max-width:640px){.balloons{display:none}.hero{padding:40px 20px 56px}
+    header{flex-wrap:wrap;gap:8px}nav a{margin:0 14px 0 0;font-size:.9rem}.logo{white-space:nowrap}}
+
+  section{padding:48px 0}
+  h2{font-size:1.5rem;margin:0 0 18px;letter-spacing:-.01em}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{margin:0 0 6px;font-size:1.1rem}
+  .card p{margin:0;color:var(--muted);font-size:.97rem}
+  .tag{display:inline-block;font-size:.78rem;font-weight:700;color:var(--accent);
+       background:color-mix(in srgb,var(--accent) 14%,transparent);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+
+  .info{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+  .info dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0}
+  .info dt{color:var(--muted);font-weight:600}
+  .info dd{margin:0;word-break:break-all}
+
+  footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:24px}
+  footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="./" aria-label="하로롱게임즈 홈">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="27" r="20" fill="#ff8a65"/><path d="M32 47 L28 56 L36 56 Z" fill="#ff8a65"/><circle cx="25" cy="21" r="5" fill="#fff" opacity=".55"/></svg>
+      하로롱게임즈
+    </a>
+    <nav>
+      <a href="#games">게임</a>
+      <a href="#contact">문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+  </header>
+</div>
+
+<div class="wrap hero">
+  <div class="balloons" aria-hidden="true"><div class="b b1"></div><div class="b b2"></div><div class="b b3"></div></div>
+  <h1>가볍게 떠오르는<br><span>즐거움</span>을 만듭니다</h1>
+  <p>하로롱게임즈는 짧은 시간에도 기분 좋게 즐길 수 있는 모바일 게임을 만드는 1인 게임 스튜디오입니다.</p>
+  <p class="en">Harorong Games is a one-person studio making light, joyful mobile games.</p>
+</div>
+
+<div class="wrap">
+  <section id="games">
+    <h2>게임 <small style="color:var(--muted);font-weight:500;font-size:1rem">Games</small></h2>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">출시 준비 중 · Coming soon</span>
+        <h3>첫 번째 게임</h3>
+        <p>곧 Google Play에서 만나요. 출시되면 이곳에 소개와 다운로드 링크를 올리겠습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>문의 · 사업자 정보 <small style="color:var(--muted);font-weight:500;font-size:1rem">Contact</small></h2>
+    <div class="info">
+      <dl>
+        <dt>상호</dt><dd>하로롱게임즈 (Harorong Games)</dd>
+        <!-- 사업자등록증이 나오면 바로 아래 줄 앞뒤의 주석 표시를 지우고 번호를 넣으세요 -->
+        <!-- <dt>사업자등록번호</dt><dd>000-00-00000</dd> -->
+        <!-- 공개 전화(070)를 넣고 싶으면 아래 줄을 살리세요 -->
+        <!-- <dt>전화</dt><dd>070-0000-0000</dd> -->
+        <dt>이메일</dt><dd><a href="mailto:support@haroronggames.com">support@haroronggames.com</a></dd>
+        <dt>문의</dt><dd>게임 이용 문의, 오류 신고, 제휴 제안은 이메일로 보내 주세요.<br><span style="color:var(--muted)">For support, please email us.</span></dd>
+      </dl>
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <footer>
+    <a href="privacy.html">개인정보처리방침 (Privacy Policy)</a>
+    <a href="mailto:support@haroronggames.com">support@haroronggames.com</a>
+    <div style="margin-top:10px">© <span id="y">2026</span> Harorong Games. All rights reserved.</div>
+  </footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
