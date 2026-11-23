@@ -40,13 +40,13 @@
   <div class="tbl"><table>
     <tr><th>구분</th><th>항목</th><th>언제, 어떻게</th></tr>
     <tr><td>광고<br>(Google AdMob)</td><td>광고 식별자(Android 광고 ID), 기기 정보(모델, 운영체제 버전, 언어), IP 주소, 광고 노출·클릭·시청 기록</td><td>앱을 실행하고 광고가 표시될 때 자동으로 수집됩니다.</td></tr>
-    <tr><td>이용 통계<br>(Firebase 애널리틱스)</td><td>앱 인스턴스 ID, 기기 정보, IP 주소로 추정한 국가·지역, 게임 이용 기록(단계 시작·종료와 결과, 진행 거리·시간, 업적, 게임 안 티켓의 획득·사용, 상점 열람, 시청한 광고 종류, 공지 확인), 구매 유형(무료·광고 제거·프리미엄 등)</td><td>옵션의 <b>‘이용 통계 보내기’</b>가 켜져 있을 때 자동으로 수집됩니다. 법이 동의를 요구하는 지역(유럽 등)에서는 기본으로 꺼져 있습니다. 이름·연락처·저장 데이터는 보내지 않습니다.</td></tr>
+    <tr><td>이용 통계<br>(Firebase 애널리틱스)</td><td>앱 인스턴스 ID, 기기 정보, IP 주소로 추정한 국가·지역, 게임 이용 기록(단계 시작·종료와 결과, 진행 거리·시간, 업적, 게임 안 티켓의 획득·사용, 상점 열람, 시청한 광고 종류, 공지 확인), 구매 유형(무료·광고 제거·프리미엄 등), 앱 안에서 구매한 상품과 가격(Firebase가 자동으로 기록)</td><td>옵션의 <b>‘이용 통계 보내기’</b>가 켜져 있을 때 자동으로 수집됩니다. 법이 동의를 요구하는 지역(유럽 등)에서는 기본으로 꺼져 있습니다. 이름·연락처·저장 데이터는 보내지 않습니다.</td></tr>
     <tr><td>공지·원격 설정<br>(Firebase 원격 구성)</td><td>앱 인스턴스 ID, 기기·앱 정보</td><td>앱이 공지와 설정을 받아올 때 자동으로 처리됩니다.</td></tr>
     <tr><td>결제<br>(Google Play 결제)</td><td>구매한 상품, 구매 시각, 주문번호와 구매 확인 정보</td><td>앱 안에서 구매할 때. 결제 수단(카드 번호 등)은 Google이 처리하며 회사는 받지 않습니다. 구매 확인 정보는 구매 확인·복원·환불 처리를 위해 기기 안에 저장됩니다.</td></tr>
     <tr><td>Google Play 게임즈<br>(로그인한 경우)</td><td>게임즈 플레이어 ID와 프로필 이름, 업적, 순위표 점수, 클라우드 저장 데이터</td><td>이용자가 Google Play 게임즈에 로그인했을 때. 클라우드 저장 데이터는 이용자의 Google 계정에 저장되고, 순위표 점수와 프로필 이름은 다른 이용자에게 보일 수 있습니다.</td></tr>
     <tr><td>알림</td><td>알림 수신 동의 여부와 동의·거부 날짜</td><td>이용자가 알림 받기를 고를 때. 기기 안에만 저장되며, 알림은 서버 없이 기기에서 예약됩니다.</td></tr>
     <tr><td>앱 안 별점 요청</td><td>(회사가 받는 정보 없음)</td><td>별점 창은 Google Play가 띄우고 처리합니다.</td></tr>
-    <tr><td>문의</td><td>이메일 주소, 문의 내용, 앱이 자동으로 채운 진단 정보(지원 코드, 앱 버전, 언어, 화면 크기, 기기 모델, 게임 진행 상황, 보유 티켓·상품, 최근 구매 내역과 주문번호, 설정, 광고 시청 수, 최근 오류 기록)</td><td>이용자가 문의 메일을 보낼 때. 진단 정보는 메일 본문에 보이며, 보내기 전에 확인하고 지울 수 있습니다.</td></tr>
+    <tr><td>문의</td><td>이메일 주소, 보낸 사람 이름(메일에 표시되는 경우), 문의 내용, 앱이 자동으로 채운 진단 정보(지원 코드, 앱 버전, 언어, 화면 크기, 기기 모델, 게임 진행 상황, 보유 티켓·상품, 최근 구매 내역과 주문번호, 설정, 광고 시청 수, 최근 오류 기록)</td><td>이용자가 문의 메일을 보낼 때. 진단 정보는 메일 본문에 보이며, 보내기 전에 확인하고 지울 수 있습니다.</td></tr>
   </table></div>
 
   <h2>2. 이용 목적</h2>
@@ -133,7 +133,7 @@
 
   <h2>9. 개인정보 보호책임자와 문의처</h2>
   <div class="tbl"><table class="kv">
-    <tr><th>개인정보 보호책임자</th><td>하로롱게임즈 대표</td></tr>
+    <tr><th>개인정보 보호책임자</th><td>홍성열(하로롱게임즈 대표)</td></tr>
     <tr><th>게임 이용·결제 문의</th><td><a href="mailto:haroronggames.support@gmail.com">haroronggames.support@gmail.com</a></td></tr>
     <tr><th>개인정보·사업 문의</th><td><a href="mailto:support@haroronggames.com">support@haroronggames.com</a></td></tr>
   </table></div>
@@ -143,7 +143,7 @@
   <p>이 방침이 바뀌면 이 페이지에 시행일과 함께 알립니다.</p>
   <ul class="muted">
     <li>2026년 11월 19일: 제정</li>
-    <li>2026년 11월 23일: 개정(이용 통계·원격 설정, Google Play 결제, Google Play 게임즈, 알림, 문의 처리와 국외 이전 내용 추가)</li>
+    <li>2026년 11월 23일: 개정(이용 통계·원격 설정, Google Play 결제, Google Play 게임즈, 알림, 문의 처리와 국외 이전 내용 추가, 이용 통계의 구매 기록과 개인정보 보호책임자 성명 기재)</li>
   </ul>
 
   <div class="box" lang="en">
@@ -152,14 +152,14 @@
     <ul>
       <li>No sign-up. We do not collect your name, phone number or address in our apps. Game progress is stored on your device.</li>
       <li><b>Ads (Google AdMob)</b>: advertising ID, device information, IP address and ad interaction data, used to show and measure ads. See <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from apps that use its services</a>.</li>
-      <li><b>Usage statistics (Google Analytics for Firebase)</b>: an app instance ID, device information, approximate country/region and gameplay events (stages played, achievements, in-game tickets, store visits, ads watched). You can turn this off with “Send usage statistics” in Options; it is off by default where the law requires consent (e.g., EEA/UK). Firebase Remote Config is used to deliver notices and settings.</li>
+      <li><b>Usage statistics (Google Analytics for Firebase)</b>: an app instance ID, device information, approximate country/region and gameplay events (stages played, achievements, in-game tickets, store visits, ads watched), and in-app purchases with product and price (recorded automatically by Firebase). You can turn this off with “Send usage statistics” in Options; it is off by default where the law requires consent (e.g., EEA/UK). Firebase Remote Config is used to deliver notices and settings.</li>
       <li><b>Purchases (Google Play Billing)</b>: Google processes payments; we never receive your card details. Purchase records (product, time, order ID) are kept on your device to confirm, restore and refund purchases.</li>
       <li><b>Google Play Games (if you sign in)</b>: player ID and profile name, achievements, leaderboard scores (which other players may see) and cloud saves stored in your Google account.</li>
       <li><b>Notifications</b>: sent only with your consent, never between 9 pm and 8 am, and you can turn them off in Options.</li>
-      <li><b>Support emails</b>: your email address, message and the diagnostic information the app fills in (which you can review before sending). Emails are handled in Gmail and Google Sheets (Google LLC, USA). The message, with email addresses, order numbers and long numbers masked, is sent to Anthropic PBC (USA) to summarize, translate and draft a reply with the Claude AI model; a person reviews every reply. Anthropic does not use this data to train its models under its commercial terms. To avoid AI processing, write to <a href="mailto:support@haroronggames.com">support@haroronggames.com</a>. Support records are kept for 3 years after the case is closed.</li>
+      <li><b>Support emails</b>: your email address, the sender name shown in your email, your message and the diagnostic information the app fills in (which you can review before sending). Emails are handled in Gmail and Google Sheets (Google LLC, USA). The message, with email addresses, order numbers and long numbers masked, is sent to Anthropic PBC (USA) to summarize, translate and draft a reply with the Claude AI model; a person reviews every reply. Anthropic does not use this data to train its models under its commercial terms. To avoid AI processing, write to <a href="mailto:support@haroronggames.com">support@haroronggames.com</a>. Support records are kept for 3 years after the case is closed.</li>
       <li>Our apps are not directed to children under 13.</li>
       <li>You can reset or delete your advertising ID in Android Settings → Google → Ads (or Settings → Privacy → Ads). To access, correct or delete your data, contact us.</li>
-      <li>Game support: <a href="mailto:haroronggames.support@gmail.com">haroronggames.support@gmail.com</a> · Privacy and business: <a href="mailto:support@haroronggames.com">support@haroronggames.com</a></li>
+      <li>Privacy officer: HONG SUNG LYUL (owner, Harorong Games) · Game support: <a href="mailto:haroronggames.support@gmail.com">haroronggames.support@gmail.com</a> · Privacy and business: <a href="mailto:support@haroronggames.com">support@haroronggames.com</a></li>
     </ul>
   </div>
 </div>
